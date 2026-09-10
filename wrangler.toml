@@ -15,4 +15,4 @@ script_name = "temp-latency"
 
 [[migrations]]
 tag = "v1"
-new_classes = ["LatencyMesh"]
+new_sqlite_classes = ["LatencyMesh"]
