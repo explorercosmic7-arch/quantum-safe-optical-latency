@@ -92,7 +92,7 @@ export class LatencyMesh {
       // Simulate measured RTT (in real system this would be actual probe)
       // We add small realistic jitter
       const jitter = (Math.random() - 0.5) * 12;
-      const measured = Math.max(8, baseline + jitter);
+      const measured = Math.max(8, baseline + jitter) + 100;
 
       measurements.push({
         node: region.name,
