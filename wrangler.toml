@@ -6,12 +6,12 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "latency_logs"
-database_id = "192da489-2477-43b4-a871-08c0644fe816"   # fill after creating D1
+database_id = "192da489-2477-43b4-a871-08c0644fe816"
 
 [[durable_objects.bindings]]
 name = "LATENCY_MESH"
 class_name = "LatencyMesh"
-script_name = "quantum-safe-optical-latency"
+script_name = "temp-latency"
 
 [[migrations]]
 tag = "v1"
