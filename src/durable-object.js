@@ -42,7 +42,7 @@ function haversineKm(lat1, lon1, lat2, lon2) {
 
 // Physics-inspired baseline (fiber ~0.67c + routing overhead)
 function estimateBaselineMs(distanceKm) {
-  const lightMs = (distanceKm / 299792) * 1000 + 100;           // pure light
+  const lightMs = (distanceKm / 299792) * 1000;           // pure light
   const fiberMs = lightMs / 0.67;                        // fiber refractive index
   const overhead = 8 + Math.random() * 6;                // routing + processing
   return fiberMs * 2 + overhead;                         // RTT
